@@ -8,13 +8,13 @@ The goal is to provide an easy way for an MCP-enabled AI client to create random
 
 ## Preview
 
-> Character Screenshot 1  
+![Character Screenshot 1](./screenshot-1.png)  
 
 _Example MCP client request and JSON response with a generated character._
 
 
 
-> Character Screenshot 2  
+![Character Screenshot 2](./screenshot-2.png)  
 
 _Another example character with different race/class options._
 
@@ -22,7 +22,7 @@ _Another example character with different race/class options._
 
 ### Demo Video
 
-> `demo.mp4`  
+[demo.mp4](./demo.mp4)  
 
 _Short terminal recording showing `docker compose up`, the MCP server starting, and a client calling the `generate_character` tool._
 
@@ -66,7 +66,7 @@ The project is intentionally small and focused:
 
 - `src/server.ts` — MCP server implementation and the `generate_character` tool wiring  
 
-- `dist/server.js` — compiled JavaScript output (created by `npm run build`)  
+- `dist/server.js` — compiled JavaScript output (created by `npm run build`, not committed to the repo)  
 
 - `Dockerfile` — Docker image definition for the server  
 
