@@ -7,20 +7,30 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "demo": "tsx src/demo.ts",
+    "web:dev": "vite --config vite.config.ts",
+    "web:build": "vite build --config vite.config.ts",
+    "web:preview": "vite preview --config vite.config.ts"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "latest",
-    "zod": "latest"
+    "zod": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "latest",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "ts-node": "latest",
     "tsx": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vite": "^5.0.0"
   }
 }
 
