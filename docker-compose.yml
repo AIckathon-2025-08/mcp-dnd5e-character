@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  mcp-dnd5e-character:
+    build: .
+    container_name: mcp-dnd5e-character
+    stdin_open: true
+    tty: true
+    command: ["node", "dist/server.js"]
+

@@ -1,0 +1,26 @@
+{
+  "name": "mcp-dnd5e-character",
+  "version": "0.1.0",
+  "description": "MCP server that generates simple D&D 5e characters.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
+
