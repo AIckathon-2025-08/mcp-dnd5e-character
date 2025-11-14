@@ -72,14 +72,20 @@ export const App: React.FC = () => {
 
         <div className="field-row">
           <label htmlFor="level">Level (1–5)</label>
-          <input
+          <select
             id="level"
-            type="number"
-            min={1}
-            max={5}
-            value={level}
-            onChange={(e) => setLevel(Number(e.target.value) || 1)}
-          />
+            value={String(level)}
+            onChange={(e) => {
+              const v = parseInt(e.target.value, 10);
+              setLevel(isNaN(v) ? 1 : v);
+            }}
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
 
         <button className="generate-button" onClick={handleGenerate}>
@@ -129,4 +135,3 @@ export const App: React.FC = () => {
     </div>
   );
 };
-
