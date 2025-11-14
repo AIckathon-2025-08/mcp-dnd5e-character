@@ -26,6 +26,9 @@ _Another example character with different race/class options._
 
 _Short terminal recording showing `docker compose up`, the MCP server starting, and a client calling the `generate_character` tool._
 
+### Live demo
+
+ https://aickathon-2025-08.github.io/mcp-dnd5e-character/
 
 
 ---
